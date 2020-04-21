@@ -1,0 +1,39 @@
+{
+  "name": "gidiyorum/geonames",
+  "description": "A collection of models and commands to get all the power of GeoNames in Eloquent ORM.",
+  "keywords": [
+    "geonames",
+    "location",
+    "eloquent",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Isern Palaus",
+      "email": "ipalaus@ipalaus.com"
+    },
+    {
+      "name": "Bayram Güçlü",
+      "email": "bayram.guclu@gidiyorum.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-zip": "*",
+    "laravel/framework": "^5.5"
+  },
+  "require-dev": {
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~5.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/migrations"
+    ],
+    "psr-4": {
+      "Gidiyorum\\Geonames\\": "src/"
+    }
+  },
+  "minimum-stability": "dev"
+}

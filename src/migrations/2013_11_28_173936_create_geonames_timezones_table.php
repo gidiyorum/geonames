@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateGeonamesTimezonesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up()
+    {
+        Schema::create('geonames_timezones', function (Blueprint $table) {
+            $table->string('id', 200)->index();
+            $table->decimal('gmt_offset', 3, 1);
+            $table->decimal('dst_offset', 3, 1);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down()
+    {
+        Schema::drop('geonames_timezones');
+    }
+}
